@@ -1,0 +1,10 @@
+<%= form_for(feedback) do |f| %>
+
+    <div class="field">
+      <%= f.label :email_address %><br>
+      <%= f.text_field :email_address %>
+    </div>
+    <div class="actions">
+      <%= f.submit "Go" %>
+    </div>
+<% end %>

@@ -1,0 +1,37 @@
+<h1>Contact Detail</h1>
+
+<%= form_for(contact_detail, html: { multipart: true } ) do |f| %>
+    <% if contact_detail.errors.any? %>
+        <div id="error_explanation">
+          <h2><%= pluralize(contact_detail.errors.count, "error") %> prohibited this contact_detail from being saved:</h2>
+
+          <ul>
+            <% contact_detail.errors.full_messages.each do |message| %>
+                <li><%= message %></li>
+            <% end %>
+          </ul>
+        </div>
+    <% end %>
+
+    <div class="field">
+      <%= f.label :full_name %><br>
+      <%= f.text_field :full_name %>
+    </div>
+    <div class="field">
+      <%= f.label :email %><br>
+      <%= f.text_field :email %>
+    </div>
+    <div class="field">
+      <%= f.label :phone_number %><br>
+      <%= f.text_field :phone_number %>
+    </div>
+    <br>
+    <div class="field">
+      <%= f.label :attachment %><br>
+      <%= f.file_field :attachment %>
+    </div>
+    <br>
+    <div class="actions">
+      <%= f.submit "Submit" %>
+    </div>
+<% end %>
