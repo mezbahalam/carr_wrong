@@ -104,6 +104,16 @@ p {
     margin-left: 25px
 }
 
+.myul ul li span{
+    color: #777777;
+    font-size: 14px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 25px
+}
+
+
+
+
 .go_back {
     margin-left: 38%;
     font-family:'Open Sans', sans-serif ;
